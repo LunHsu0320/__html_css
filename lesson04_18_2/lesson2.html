@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            display: flex;
+            flex-direction: row;/*屬性指定了內部元素是如何在flex容器中佈局的*/
+            justify-content: flex-start; /* 从行首起始位置开始排列 */
+            align-items: center;/*指定物件上中下*/
+            margin: 0;
+            padding: 0;
+            list-style: none;/*有其他功能 這個none是說不要有標題符號*/
+            background-color: burlywood;
+        }
+        li.logo{
+            margin-right: auto;/*物件右邊的margin會自動調整*/
+        }
+        li{
+            margin:0 1em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="logo"><img src="https://picsum.photos/id/684/100/50" alt=""></li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Shop</li>
+        <li>Contact</li>
+    </ul>
+</body>
+
+</html>
