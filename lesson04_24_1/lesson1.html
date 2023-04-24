@@ -34,7 +34,7 @@
             padding: 0.5em;
             font-weight: bold;
             color: #1275B1;
-            
+
 
         }
 
@@ -58,13 +58,15 @@
             width: 75%;
             margin: auto;
             text-align: center;
-            
+
         }
-        section#Banner h3{
+
+        section#Banner h3 {
             font-size: 2.5em;
             color: #494949;
         }
-        section#Banner p{
+
+        section#Banner p {
             font-size: 1.2em;
             line-height: 1.5em;
             color: #494949;
@@ -87,7 +89,7 @@
             flex-wrap: nowrap;
             justify-content: space-around;
         } */
-        section#Banner div a{
+        section#Banner div a {
             display: inline-block;
             padding: 1em 1.5em;
             width: 5em;
@@ -99,33 +101,60 @@
             /* float: left; */
             justify-content: center;
         }
-        section#Banner div a:link{
+
+        section#Banner div a:link {
             text-decoration: none;
-            
+
         }
-        section#Banner div a:hover{
+
+        section#Banner div a:hover {
             text-decoration: none;
             color: #cecece;
         }
 
-        main{
+        main {
             margin: 1em auto;
-            
+
         }
-        main h3{
+
+        main h3 {
             font-size: 1.5em;
             color: #555;
             border-bottom: 1px solid #555;
             padding-bottom: 1em;
         }
-        main div#icon{
+
+        main div#icon {
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
         }
-        main div#icon section{
+
+        main div#icon section {
             box-sizing: border-box;
-            border: solid red 1px;
+            /* border: solid red 1px; */
+            flex: 1 1 auto;
+            padding: 1em;
+        }
+        main h4{
+            font-size: 1.5em;
+        }
+        footer{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 2em;
+            margin: 0 20%;
+            border-top: #555 solid 1px;
+        }
+        footer #copyright{
+            margin-right: 2em;
+            font-size: smaller;
+        }
+        footer #copyright ~ p{
+            flex:0 1 40px;
         }
     </style>
 </head>
@@ -148,26 +177,41 @@
             open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt
             components, and powerful JavaScript plugins.</p>
         <div>
-            
+
             <a href="#">Primary</a>
             <a href="#">Secondary</a>
-        
+
         </div>
     </section>
     <main>
         <h3>Columns with icons</h3>
         <div id="icon">
-        <section>
-            <img src="images/instagram.png" alt="ig">
-        </section>
-        <section>
-            <img src="images/tinder.png" alt="tinder">
-        </section>
-        <section>
-            <img src="images/reddit.png" alt="reddit">
-        </section>
-    </div>
+            <section>
+                <img src="images/instagram.png" alt="ig" width="60">
+                <h4>Featured title</h4>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <p><a href="#">Call to action ></a></p>
+            </section>
+            <section>
+                <img src="images/tinder.png" alt="tinder" width="60">
+                <h4>Featured title</h4>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <p><a href="#">Call to action ></a></p>
+            </section>
+            <section>
+                <img src="images/reddit.png" alt="reddit" width="60">
+                <h4>Featured title</h4>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <p><a href="#">Call to action ></a></p>
+            </section>
+        </div>
     </main>
+    <footer>
+        <p id="copyright">© 2023 Company, Inc</p>
+        <p><a href="#"><img src="images/heart.png" alt="heart" width="20"></a></p>
+        <p><a href="#"><img src="images/Icon.png" alt="Icon" width="20"></a></p>
+        <p><a href="#"><img src="images/photograph.png" alt="Photo" width="20"></a></p>
+    </footer>
 </body>
 
 </html>
