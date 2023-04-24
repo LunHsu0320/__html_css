@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>BootStrap</title>
+    <style>
+        body{
+            margin: 2em 5% 2em 5%;
+        }
+        header ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: start;
+            border-bottom: solid rgb(171, 171, 171) 1px;
+            padding-bottom: 1.5em;
+            align-items: center;
+        }
+
+        header ul {
+            margin: 0;
+            padding-left: 0;
+            list-style-type: none;
+        }
+
+        header ul li a{
+            display: block;
+            padding: 0.5em;
+            font-weight: bold;            
+            color: #1275B1;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        header a.active{
+            color: rgb(255, 255, 255);
+            background-color: #1275B1;
+            border-radius: .4em;
+        }
+
+        header ul li a:link{
+            text-decoration: none;
+        }
+
+        header #LOGO {
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li id="LOGO"><img src="images/LOGO.png" alt="LOGO"></li>            
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+    </header>
+</body>
+
+</html>
