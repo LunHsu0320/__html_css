@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <title>BootStrap</title>
     <style>
-        body{
+        body {
             margin: 2em 5% 2em 5%;
+            font-family: Arial, Helvetica, sans-serif;
         }
+
         header ul {
             display: flex;
             flex-direction: row;
@@ -27,26 +29,103 @@
             list-style-type: none;
         }
 
-        header ul li a{
+        header ul li a {
             display: block;
             padding: 0.5em;
-            font-weight: bold;            
+            font-weight: bold;
             color: #1275B1;
-            font-family: Arial, Helvetica, sans-serif;
+            
 
         }
-        header a.active{
+
+        header a.active {
             color: rgb(255, 255, 255);
             background-color: #1275B1;
             border-radius: .4em;
         }
 
-        header ul li a:link{
+        header ul li a:link {
             text-decoration: none;
         }
 
         header #LOGO {
             margin-right: auto;
+        }
+
+        section#Banner {
+            box-sizing: border-box;
+            /* background-color: antiquewhite; */
+            width: 75%;
+            margin: auto;
+            text-align: center;
+            
+        }
+        section#Banner h3{
+            font-size: 2.5em;
+            color: #494949;
+        }
+        section#Banner p{
+            font-size: 1.2em;
+            line-height: 1.5em;
+            color: #494949;
+        }
+
+        /* section#Banner div ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        } */
+
+        /* section#banner div::after{
+            content: " ";
+            display: block;
+            clear: both;
+        } */
+        /* section#Banner div{
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        } */
+        section#Banner div a{
+            display: inline-block;
+            padding: 1em 1.5em;
+            width: 5em;
+            background-color: #1275B1;
+            text-align: center;
+            font-weight: bolder;
+            color: white;
+            border-radius: .8em;
+            /* float: left; */
+            justify-content: center;
+        }
+        section#Banner div a:link{
+            text-decoration: none;
+            
+        }
+        section#Banner div a:hover{
+            text-decoration: none;
+            color: #cecece;
+        }
+
+        main{
+            margin: 1em auto;
+            
+        }
+        main h3{
+            font-size: 1.5em;
+            color: #555;
+            border-bottom: 1px solid #555;
+            padding-bottom: 1em;
+        }
+        main div#icon{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        main div#icon section{
+            box-sizing: border-box;
+            border: solid red 1px;
         }
     </style>
 </head>
@@ -54,7 +133,7 @@
 <body>
     <header>
         <ul>
-            <li id="LOGO"><img src="images/LOGO.png" alt="LOGO"></li>            
+            <li id="LOGO"><img src="images/LOGO.png" alt="LOGO"></li>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Pricing</a></li>
@@ -63,6 +142,32 @@
         </ul>
 
     </header>
+    <section id="Banner">
+        <h3>Centered hero</h3>
+        <p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end
+            open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt
+            components, and powerful JavaScript plugins.</p>
+        <div>
+            
+            <a href="#">Primary</a>
+            <a href="#">Secondary</a>
+        
+        </div>
+    </section>
+    <main>
+        <h3>Columns with icons</h3>
+        <div id="icon">
+        <section>
+            <img src="images/instagram.png" alt="ig">
+        </section>
+        <section>
+            <img src="images/tinder.png" alt="tinder">
+        </section>
+        <section>
+            <img src="images/reddit.png" alt="reddit">
+        </section>
+    </div>
+    </main>
 </body>
 
 </html>
