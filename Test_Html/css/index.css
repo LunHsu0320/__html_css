@@ -1,52 +1,117 @@
-#root{
+body{
+    background-color: cornflowerblue;
+}
+
+#root {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
-#layout{
-   display:grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: 200px auto 300px;
-   grid-template-areas: 
-   "header"
-   "content"
-   "footer"
+
+#layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 300px;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer"
 }
-#layout header{
+
+#layout header {
     grid-area: header;
     background-color: aqua;
 
 }
-#layout main{
+
+#layout main {
     grid-area: content;
     background-color: aquamarine;
 }
-#layout footer{
+
+#layout footer {
     grid-area: footer;
     background-color: blue;
 }
 
+#cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
-@media (min-width: 576px) { #root{
-    max-width: 100%;
-} }
+#cards section {
+    flex: 0 1 100%;
+    border: 1px green solid;
+}
+
+#cards section.s1 {
+    background-color: violet;
+}
+
+#cards section.s2 {
+    background-color: yellowgreen;
+}
+
+#cards h1 {
+    text-align: center;
+    margin: 2em 0;
+}
+
+header h2{
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.5em;
+    color: rgb(97, 97, 97);
+    margin-top: 1em;
+}
+header img{
+    display: block;
+    margin: 1em auto 2em;
+}
+
+
+
+@media (min-width: 576px) {
+    #root {
+        max-width: 100%;
+    }
+}
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { #root{
-    max-width: 720px;
-} }
+@media (min-width: 768px) {
+    #root {
+        max-width: 720px;
+    }
+
+    #cards section {
+        flex: 0 1 50%;
+        border: 1px green solid;
+    }
+}
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { #root{
-    max-width: 960px;
-} }
+@media (min-width: 992px) {
+    #root {
+        max-width: 960px;
+    }
+}
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { #root{
-    max-width: 1140px;
-} }
+@media (min-width: 1200px) {
+    #root {
+        max-width: 1140px;
+    }
+
+    #cards section {
+        flex: 1 1 33%;
+        border: 1px green solid;
+    }
+}
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { #root{
-    max-width: 1320px;
-} }
+@media (min-width: 1400px) {
+    #root {
+        max-width: 1320px;
+    }
+}
