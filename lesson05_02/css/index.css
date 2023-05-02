@@ -41,37 +41,75 @@ body {
 
 #cards section {
     flex: 0 1 100%;
-    /* border: 1px black solid; */
     padding: 2em;
 }
 
-#cards section div {
-    border: 1px rgba(0, 0, 0, 0.1) solid;
+#cards section .card {
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-#cards section.card {
-    background-color: rgb(254, 255, 220);
+#cards .card {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
 
-#cards section.card .cardTitle {
+#cards .card .cardTitle {
     flex: 0 1 200px;
+
 }
 
-#cards section.card .cardText {
+#cards .card .cardText {
     flex: 0 1 100px;
+    padding: 1em;
 }
 
-#cards section.card .cardFood {
+#cards .card .cardFooter {
     flex: 0 1 50px;
 }
 
 
+#cards .cardFooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 1em;
+}
 
+#cards .cardFooter .view {
+    flex: 0 1 50px;
+    padding: 0.5em;
+    border-radius: .5em 0 0 .5em;
+}
 
+#cards .cardFooter .edit {
+    flex: 0 1 50px;
+    padding: 0.5em;
+    border-radius: 0 .5em .5em 0;
+}
+
+#cards .cardFooter a {
+    text-decoration: none;
+    color: white;
+    border: 1px lightgray solid;
+    background-color: #d1d1d1;
+    font-size: 0.8em;
+}
+
+#cards .cardFooter a:hover {
+    color: black;
+}
+
+#cards .cardFooter span {
+    flex: 0 1 70px;
+    margin-left: auto;
+    padding: 0.5em;
+    font-size: 0.8em;
+    color: rgb(125, 125, 125);
+
+}
 
 header h2 {
     font-size: 2em;
